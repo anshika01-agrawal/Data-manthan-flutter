@@ -48,7 +48,7 @@ class OtolithAnalysisScreen extends StatelessWidget {
           ],
         ),
       ),
-      backgroundColor: Color(0xFF0F172A),
+      backgroundColor: const Color(0xFF0F172A),
     );
   }
 }

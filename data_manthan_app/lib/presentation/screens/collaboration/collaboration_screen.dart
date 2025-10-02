@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../core/themes/app_theme.dart';
-import '../../widgets/common/bottom_navigation.dart';
 
 class CollaborationScreen extends StatelessWidget {
   const CollaborationScreen({super.key});
@@ -18,28 +16,38 @@ class CollaborationScreen extends StatelessWidget {
             Icon(
               Icons.handshake,
               size: 80,
-              color: AppColors.accentCyan,
+              color: Colors.cyan,
             ),
             SizedBox(height: 16),
             Text(
               'Research Collaboration',
-              style: AppTextStyles.headline3,
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 8),
             Text(
               'Project management and team collaboration',
-              style: AppTextStyles.bodyMedium,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white70,
+              ),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 24),
             Text(
               'Coming Soon!',
-              style: AppTextStyles.bodyLarge,
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
       ),
-      bottomNavigationBar: const AppBottomNavigation(currentIndex: 4),
+      backgroundColor: const Color(0xFF0F172A),
     );
   }
 }

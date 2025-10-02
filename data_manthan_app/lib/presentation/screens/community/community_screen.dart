@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../core/themes/app_theme.dart';
-import '../../widgets/common/bottom_navigation.dart';
 
 class CommunityScreen extends StatelessWidget {
   const CommunityScreen({super.key});
 
-class _CommunityScreenState extends State<CommunityScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,28 +17,38 @@ class _CommunityScreenState extends State<CommunityScreen> {
             Icon(
               Icons.groups,
               size: 80,
-              color: AppColors.error,
+              color: Colors.purple,
             ),
             SizedBox(height: 16),
             Text(
-              'Marine Community',
-              style: AppTextStyles.headline3,
+              'Community',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 8),
             Text(
-              'Connect with marine researchers worldwide',
-              style: AppTextStyles.bodyMedium,
+              'Connect with marine researchers and experts',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white70,
+              ),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 24),
             Text(
               'Coming Soon!',
-              style: AppTextStyles.bodyLarge,
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
       ),
-      bottomNavigationBar: const AppBottomNavigation(currentIndex: 4),
+      backgroundColor: const Color(0xFF0F172A),
     );
   }
 }

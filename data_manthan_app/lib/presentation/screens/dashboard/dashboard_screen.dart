@@ -4,7 +4,6 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import '../../../core/themes/app_theme.dart';
 import '../../../core/routes/app_router.dart';
 import '../../widgets/common/app_card.dart';
-import '../../widgets/common/bottom_navigation.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -102,9 +101,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
           ),
         ],
       ),
-      
-      // Bottom Navigation
-      bottomNavigationBar: const AppBottomNavigation(currentIndex: 0),
       
       // Floating Action Button
       floatingActionButton: FloatingActionButton.extended(
