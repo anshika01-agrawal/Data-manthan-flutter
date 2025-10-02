@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import '../../../core/themes/app_theme.dart';
 import '../../widgets/common/bottom_navigation.dart';
 
@@ -23,9 +22,9 @@ class _EdnaProcessingScreenState extends State<EdnaProcessingScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              MdiIcons.dna,
+              Icons.biotech,
               size: 80,
-              color: AppColors.warning,
+              color: Colors.orange,
             ),
             SizedBox(height: 16),
             Text(

@@ -58,7 +58,7 @@ class AppColors {
 }
 
 class AppTextStyles {
-  static const String fontFamily = 'Inter';
+  // static const String fontFamily = 'Inter'; // Using system default for now
   
   // Headlines
   static const TextStyle headline1 = TextStyle(

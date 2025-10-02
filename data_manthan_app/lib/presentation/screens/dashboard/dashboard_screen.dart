@@ -33,7 +33,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
               ),
               background: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   gradient: AppColors.oceanGradient,
                 ),
                 child: Stack(

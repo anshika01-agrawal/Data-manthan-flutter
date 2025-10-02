@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../core/themes/app_theme.dart';
-import '../../core/routes/app_router.dart';
+import '../../../core/themes/app_theme.dart';
+import '../../../core/routes/app_router.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -36,7 +36,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     OnboardingPage(
       title: 'eDNA Processing',
       description: 'Environmental DNA sequencing pipeline for marine biodiversity analysis and species detection',
-      icon: Icons.dna,
+      icon: Icons.biotech,
       gradient: AppColors.deepSeaGradient,
     ),
     OnboardingPage(
