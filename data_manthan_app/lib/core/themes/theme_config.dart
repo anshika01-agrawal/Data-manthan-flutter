@@ -6,7 +6,7 @@ class ThemeConfig {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      fontFamily: AppTextStyles.fontFamily,
+      // fontFamily: AppTextStyles.fontFamily, // Using system default
       
       // Color Scheme
       colorScheme: const ColorScheme.dark(

@@ -192,7 +192,7 @@ class RouterObserver extends NavigatorObserver {
 class OtolithDetailScreen extends StatelessWidget {
   final String id;
   
-  const OtolithDetailScreen({Key? key, required this.id}) : super(key: key);
+  const OtolithDetailScreen({super.key, required this.id});
   
   @override
   Widget build(BuildContext context) {
@@ -206,7 +206,7 @@ class OtolithDetailScreen extends StatelessWidget {
 class EdnaDetailScreen extends StatelessWidget {
   final String id;
   
-  const EdnaDetailScreen({Key? key, required this.id}) : super(key: key);
+  const EdnaDetailScreen({super.key, required this.id});
   
   @override
   Widget build(BuildContext context) {
@@ -220,7 +220,7 @@ class EdnaDetailScreen extends StatelessWidget {
 class ProjectDetailScreen extends StatelessWidget {
   final String projectId;
   
-  const ProjectDetailScreen({Key? key, required this.projectId}) : super(key: key);
+  const ProjectDetailScreen({super.key, required this.projectId});
   
   @override
   Widget build(BuildContext context) {
@@ -232,7 +232,7 @@ class ProjectDetailScreen extends StatelessWidget {
 }
 
 class UserProfileScreen extends StatelessWidget {
-  const UserProfileScreen({Key? key}) : super(key: key);
+  const UserProfileScreen({super.key});
   
   @override
   Widget build(BuildContext context) {
@@ -244,7 +244,7 @@ class UserProfileScreen extends StatelessWidget {
 }
 
 class SettingsScreen extends StatelessWidget {
-  const SettingsScreen({Key? key}) : super(key: key);
+  const SettingsScreen({super.key});
   
   @override
   Widget build(BuildContext context) {

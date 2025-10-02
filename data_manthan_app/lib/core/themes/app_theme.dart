@@ -25,65 +25,70 @@ class AppColors {
   
   // Gradient Colors
   static const LinearGradient oceanGradient = LinearGradient(
+    colors: [primaryBlue, secondaryBlue],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [
-      primaryBlue,
-      secondaryBlue,
-      accentCyan,
-    ],
   );
   
   static const LinearGradient deepSeaGradient = LinearGradient(
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    colors: [
-      Color(0xFF1E3A8A),
-      Color(0xFF1E40AF),
-      Color(0xFF3B82F6),
-    ],
+    colors: [darkBackground, secondaryBlue],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
   );
   
-  // Chart Colors
+  static const LinearGradient cardGradient = LinearGradient(
+    colors: [cardColor, surfaceColor],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+  
+  static const LinearGradient accentGradient = LinearGradient(
+    colors: [accentCyan, lightCyan],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+  
+  // Chart Colors for Data Visualization
   static const List<Color> chartColors = [
-    Color(0xFF06B6D4), // Cyan
-    Color(0xFF10B981), // Emerald
-    Color(0xFFF59E0B), // Amber
-    Color(0xFFEF4444), // Red
-    Color(0xFF8B5CF6), // Violet
-    Color(0xFFF97316), // Orange
+    primaryBlue,
+    accentCyan,
+    lightCyan,
+    success,
+    warning,
+    info,
+    Color(0xFF8B5CF6), // Purple
     Color(0xFFEC4899), // Pink
-    Color(0xFF6366F1), // Indigo
   ];
+  
+  // Additional functional colors
+  static const Color divider = Color(0xFF475569);
+  static const Color outline = Color(0xFF64748B);
+  static const Color shadow = Color(0x1A000000);
 }
 
 class AppTextStyles {
-  // static const String fontFamily = 'Inter'; // Using system default for now
+  // Using system default fonts for now
   
   // Headlines
   static const TextStyle headline1 = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 32,
     fontWeight: FontWeight.bold,
     color: AppColors.primaryText,
   );
   
   static const TextStyle headline2 = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 28,
     fontWeight: FontWeight.bold,
     color: AppColors.primaryText,
   );
   
   static const TextStyle headline3 = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 24,
     fontWeight: FontWeight.w600,
     color: AppColors.primaryText,
   );
   
   static const TextStyle headline4 = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: AppColors.primaryText,
@@ -91,103 +96,136 @@ class AppTextStyles {
   
   // Body Text
   static const TextStyle bodyLarge = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 16,
     fontWeight: FontWeight.normal,
     color: AppColors.primaryText,
   );
   
   static const TextStyle bodyMedium = TextStyle(
-    fontFamily: fontFamily,
     fontSize: 14,
+    fontWeight: FontWeight.normal,
+    color: AppColors.primaryText,
+  );
+  
+  static const TextStyle bodySmall = TextStyle(
+    fontSize: 12,
     fontWeight: FontWeight.normal,
     color: AppColors.secondaryText,
   );
   
-  static const TextStyle bodySmall = TextStyle(
-    fontFamily: fontFamily,
+  // Labels and Buttons
+  static const TextStyle labelLarge = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primaryText,
+  );
+  
+  static const TextStyle labelMedium = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primaryText,
+  );
+  
+  // Caption and Small Text
+  static const TextStyle caption = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.normal,
     color: AppColors.mutedText,
+  );
+  
+  static const TextStyle overline = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w500,
+    color: AppColors.mutedText,
+    letterSpacing: 1.2,
   );
   
   // Button Text
   static const TextStyle buttonText = TextStyle(
-    fontFamily: fontFamily,
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: FontWeight.w600,
     color: AppColors.primaryText,
-  );
-  
-  // Captions
-  static const TextStyle caption = TextStyle(
-    fontFamily: fontFamily,
-    fontSize: 12,
-    fontWeight: FontWeight.normal,
-    color: AppColors.mutedText,
   );
 }
 
 class AppDimensions {
-  // Padding
+  // Spacing
   static const double paddingXS = 4.0;
   static const double paddingS = 8.0;
   static const double paddingM = 16.0;
   static const double paddingL = 24.0;
   static const double paddingXL = 32.0;
-  
-  // Margin
-  static const double marginXS = 4.0;
-  static const double marginS = 8.0;
-  static const double marginM = 16.0;
-  static const double marginL = 24.0;
-  static const double marginXL = 32.0;
+  static const double paddingXXL = 48.0;
   
   // Border Radius
-  static const double radiusS = 8.0;
-  static const double radiusM = 12.0;
-  static const double radiusL = 16.0;
-  static const double radiusXL = 24.0;
+  static const double radiusXS = 2.0;
+  static const double radiusS = 4.0;
+  static const double radiusM = 8.0;
+  static const double radiusL = 12.0;
+  static const double radiusXL = 16.0;
+  static const double radiusXXL = 24.0;
+  static const double radiusRound = 999.0;
   
   // Icon Sizes
+  static const double iconXS = 12.0;
   static const double iconS = 16.0;
   static const double iconM = 24.0;
   static const double iconL = 32.0;
   static const double iconXL = 48.0;
+  static const double iconXXL = 64.0;
   
   // Button Heights
-  static const double buttonHeightS = 36.0;
-  static const double buttonHeightM = 48.0;
-  static const double buttonHeightL = 56.0;
+  static const double buttonHeightS = 32.0;
+  static const double buttonHeightM = 40.0;
+  static const double buttonHeightL = 48.0;
+  static const double buttonHeightXL = 56.0;
   
-  // Card Dimensions
-  static const double cardHeight = 200.0;
-  static const double chartHeight = 300.0;
-  static const double listItemHeight = 80.0;
+  // App Bar
+  static const double appBarHeight = 56.0;
+  static const double toolbarHeight = 56.0;
+  
+  // Bottom Navigation
+  static const double bottomNavigationHeight = 80.0;
+  
+  // Cards
+  static const double cardElevation = 4.0;
+  static const double cardElevationHovered = 8.0;
+  
+  // Dividers
+  static const double dividerThickness = 1.0;
+  static const double thickDividerThickness = 2.0;
+  
+  // Margins (same as padding for consistency)
+  static const double marginXS = paddingXS;
+  static const double marginS = paddingS;
+  static const double marginM = paddingM;
+  static const double marginL = paddingL;
+  static const double marginXL = paddingXL;
+  static const double marginXXL = paddingXXL;
 }
 
 class AppShadows {
   static const List<BoxShadow> cardShadow = [
     BoxShadow(
-      color: Color(0x1A000000),
-      blurRadius: 10,
-      offset: Offset(0, 4),
-    ),
-  ];
-  
-  static const List<BoxShadow> buttonShadow = [
-    BoxShadow(
-      color: Color(0x33000000),
-      blurRadius: 8,
+      color: AppColors.shadow,
+      blurRadius: 8.0,
       offset: Offset(0, 2),
     ),
   ];
   
-  static const List<BoxShadow> floatingActionButtonShadow = [
+  static const List<BoxShadow> elevatedShadow = [
     BoxShadow(
-      color: Color(0x44000000),
-      blurRadius: 12,
-      offset: Offset(0, 6),
+      color: AppColors.shadow,
+      blurRadius: 12.0,
+      offset: Offset(0, 4),
+    ),
+  ];
+  
+  static const List<BoxShadow> deepShadow = [
+    BoxShadow(
+      color: AppColors.shadow,
+      blurRadius: 16.0,
+      offset: Offset(0, 8),
     ),
   ];
 }

@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+impoclass DataVisualizationScreen extends StatelessWidget {
+  const DataVisualizationScreen({super.key}); 'package:flutter/material.dart';
 import '../../../core/themes/app_theme.dart';
 import '../../widgets/common/bottom_navigation.dart';
 

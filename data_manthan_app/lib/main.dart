@@ -26,37 +26,17 @@ void main() async {
   runApp(const DataManthanApp());
 }
 
-class DataManthanApp extends StatelessWidget {
-  const DataManthanApp({Key? key}) : super(key: key);
-
+class _DataManthanAppState extends State<DataManthanApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: AppConstants.appName,
+      title: 'Data Manthan',
       debugShowCheckedModeBanner: false,
-      
-      // Theme Configuration
       theme: ThemeConfig.darkTheme,
-      themeMode: ThemeMode.dark,
-      
-      // Router Configuration
       routerConfig: AppRouter.router,
-      
-      // Localization (can be extended later)
-      supportedLocales: const [
-        Locale('en', 'US'),
-      ],
-      
-      // Builder for additional configurations
-      builder: (context, child) {
-        return MediaQuery(
-          // Prevent font scaling issues
-          data: MediaQuery.of(context).copyWith(
-            textScaler: TextScaler.noScaling,
-          ),
-          child: child!,
-        );
-      },
     );
   }
 }
+
+class DataManthanApp extends StatefulWidget {
+  const DataManthanApp({super.key});

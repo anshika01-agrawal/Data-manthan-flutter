@@ -7,7 +7,7 @@ import '../../widgets/common/app_card.dart';
 import '../../widgets/common/bottom_navigation.dart';
 
 class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();

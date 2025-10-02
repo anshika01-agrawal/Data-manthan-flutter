@@ -5,11 +5,10 @@ import '../../../core/routes/app_router.dart';
 
 class AppBottomNavigation extends StatelessWidget {
   final int currentIndex;
-
+  final Function(int) onTap;
+  
   const AppBottomNavigation({
-    Key? key,
-    required this.currentIndex,
-  }) : super(key: key);
+    super.key,
 
   @override
   Widget build(BuildContext context) {
@@ -139,12 +138,21 @@ class TabNavigationBar extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
 
+  class TabNavigationBar extends StatelessWidget {
+  final int currentIndex;
+  final Function(int) onTap;
+  final List<NavigationTab> tabs;
+  final Color? backgroundColor;
+  final Color? selectedColor;
+  final Color? unselectedColor;
+  final double height;
+  final EdgeInsetsGeometry? padding;
+  final BorderRadius? borderRadius;
+  final bool showLabels;
+  final bool showIndicator;
+  
   const TabNavigationBar({
-    Key? key,
-    required this.tabs,
-    required this.currentIndex,
-    required this.onTap,
-  }) : super(key: key);
+    super.key,
 
   @override
   Widget build(BuildContext context) {
@@ -209,16 +217,18 @@ class TabItem {
 }
 
 class FloatingTabBar extends StatelessWidget {
-  final List<TabItem> tabs;
   final int currentIndex;
-  final ValueChanged<int> onTap;
-
+  final Function(int) onTap;
+  final List<NavigationTab> tabs;
+  final Color? backgroundColor;
+  final Color? selectedColor;
+  final Color? unselectedColor;
+  final EdgeInsetsGeometry? margin;
+  final BorderRadius? borderRadius;
+  final bool showLabels;
+  
   const FloatingTabBar({
-    Key? key,
-    required this.tabs,
-    required this.currentIndex,
-    required this.onTap,
-  }) : super(key: key);
+    super.key,
 
   @override
   Widget build(BuildContext context) {

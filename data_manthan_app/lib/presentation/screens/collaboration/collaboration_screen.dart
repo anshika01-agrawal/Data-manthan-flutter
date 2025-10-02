@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+impoclass CollaborationScreen extends StatelessWidget {
+  const CollaborationScreen({super.key}); 'package:flutter/material.dart';
 import '../../../core/themes/app_theme.dart';
 import '../../widgets/common/bottom_navigation.dart';
 
