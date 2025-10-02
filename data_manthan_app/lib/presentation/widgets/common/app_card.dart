@@ -60,14 +60,14 @@ class GradientCard extends StatelessWidget {
   final BorderRadius? borderRadius;
 
   const GradientCard({
-    Key? key,
+    super.key,
     required this.child,
     required this.gradient,
     this.padding,
     this.margin,
     this.onTap,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +110,7 @@ class StatsCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const StatsCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.value,
     this.subtitle,
@@ -119,7 +119,7 @@ class StatsCard extends StatelessWidget {
     this.trend,
     this.isPositiveTrend = true,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -211,7 +211,7 @@ class InfoCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const InfoCard({
-    Key? key,
+    super.key,
     required this.title,
     this.subtitle,
     required this.icon,
@@ -219,7 +219,7 @@ class InfoCard extends StatelessWidget {
     this.buttonText,
     this.onButtonPressed,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -286,13 +286,13 @@ class FeatureCard extends StatelessWidget {
   final VoidCallback onTap;
 
   const FeatureCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.subtitle,
     required this.icon,
     required this.color,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

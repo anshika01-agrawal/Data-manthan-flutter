@@ -32,7 +32,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
               ),
               background: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   gradient: AppColors.oceanGradient,
                 ),
                 child: Stack(
@@ -121,7 +121,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         children: [
           Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.wb_sunny,
                 color: AppColors.accentCyan,
                 size: 32,
@@ -134,7 +134,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     'Good ${_getGreeting()}!',
                     style: AppTextStyles.headline4,
                   ),
-                  Text(
+                  const Text(
                     'Ready to explore ocean data?',
                     style: AppTextStyles.bodyMedium,
                   ),
@@ -151,7 +151,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.info_outline,
                   color: AppColors.accentCyan,
                   size: 20,
@@ -240,7 +240,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ),
             ],
           ),
-          const SizedBox(height: 8),
+                      const SizedBox(height: 8),
           Text(
             value,
             style: AppTextStyles.headline3.copyWith(
@@ -305,7 +305,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Main Features',
           style: AppTextStyles.headline4,
         ),
@@ -374,7 +374,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               'Recent Activity',
               style: AppTextStyles.headline4,
             ),
