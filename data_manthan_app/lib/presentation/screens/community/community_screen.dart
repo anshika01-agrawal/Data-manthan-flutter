@@ -1,14 +1,9 @@
-impoclass CommunityScreen extends StatelessWidget {
-  const CommunityScreen({super.key}); 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import '../../../core/themes/app_theme.dart';
 import '../../widgets/common/bottom_navigation.dart';
 
-class CommunityScreen extends StatefulWidget {
-  const CommunityScreen({Key? key}) : super(key: key);
-
-  @override
-  State<CommunityScreen> createState() => _CommunityScreenState();
-}
+class CommunityScreen extends StatelessWidget {
+  const CommunityScreen({super.key});
 
 class _CommunityScreenState extends State<CommunityScreen> {
   @override

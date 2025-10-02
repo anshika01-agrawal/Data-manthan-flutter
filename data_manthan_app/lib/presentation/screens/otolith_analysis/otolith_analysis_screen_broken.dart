@@ -1,8 +1,19 @@
-import 'package:flutter/material.dart';
+import   @override
+  Widget build(BuildContext context) {:flutter/material.dart';
 
 class OtolithAnalysisScreen extends StatelessWidget {
   const OtolithAnalysisScreen({super.key});
+import '../../../core/themes/app_theme.dart';
+import '../../widgets/common/bottom_navigation.dart';
 
+class OtolithAnalysisScreen extends StatefulWidget {
+  const OtolithAnalysisScreen({Key? key}) : super(key: key);
+
+  @override
+  State<OtolithAnalysisScreen> createState() => _OtolithAnalysisScreenState();
+}
+
+class _OtolithAnalysisScreenState extends State<OtolithAnalysisScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,33 +33,23 @@ class OtolithAnalysisScreen extends StatelessWidget {
             SizedBox(height: 16),
             Text(
               'Otolith Analysis',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
+              style: AppTextStyles.headline3,
             ),
             SizedBox(height: 8),
             Text(
               'Species identification and age determination',
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.white70,
-              ),
+              style: AppTextStyles.bodyMedium,
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 24),
             Text(
               'Coming Soon!',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
+              style: AppTextStyles.bodyLarge,
             ),
           ],
         ),
       ),
-      backgroundColor: Color(0xFF0F172A),
+      bottomNavigationBar: const AppBottomNavigation(currentIndex: 2),
     );
   }
 }

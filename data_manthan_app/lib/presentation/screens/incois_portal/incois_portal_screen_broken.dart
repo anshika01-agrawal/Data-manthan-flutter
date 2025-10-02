@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../../core/themes/app_theme.dart';
+import '../../widgets/common/bottom_navigation.dart';
 
 class IncoisPortalScreen extends StatelessWidget {
   const IncoisPortalScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,38 +18,28 @@ class IncoisPortalScreen extends StatelessWidget {
             Icon(
               Icons.public,
               size: 80,
-              color: Colors.cyan,
+              color: AppColors.info,
             ),
             SizedBox(height: 16),
             Text(
               'INCOIS Portal',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
+              style: AppTextStyles.headline3,
             ),
             SizedBox(height: 8),
             Text(
-              'Indian National Centre for Ocean Information Services',
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.white70,
-              ),
+              'Indian Ocean data access and analysis',
+              style: AppTextStyles.bodyMedium,
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 24),
             Text(
               'Coming Soon!',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
+              style: AppTextStyles.bodyLarge,
             ),
           ],
         ),
       ),
-      backgroundColor: Color(0xFF0F172A),
+      bottomNavigationBar: const AppBottomNavigation(currentIndex: 1),
     );
   }
 }

@@ -1,16 +1,8 @@
-impoclass EdnaProcessingScreen extends StatelessWidget {
-  const EdnaProcessingScreen({super.key}); 'package:flutter/material.dart';
-import '../../../core/themes/app_theme.dart';
-import '../../widgets/common/bottom_navigation.dart';
+import 'package:flutter/material.dart';
 
-class EdnaProcessingScreen extends StatefulWidget {
-  const EdnaProcessingScreen({Key? key}) : super(key: key);
+class EdnaProcessingScreen extends StatelessWidget {
+  const EdnaProcessingScreen({super.key});
 
-  @override
-  State<EdnaProcessingScreen> createState() => _EdnaProcessingScreenState();
-}
-
-class _EdnaProcessingScreenState extends State<EdnaProcessingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,23 +22,33 @@ class _EdnaProcessingScreenState extends State<EdnaProcessingScreen> {
             SizedBox(height: 16),
             Text(
               'eDNA Processing',
-              style: AppTextStyles.headline3,
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 8),
             Text(
-              'Environmental DNA sequencing and analysis',
-              style: AppTextStyles.bodyMedium,
+              'Environmental DNA analysis and species detection',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.white70,
+              ),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 24),
             Text(
               'Coming Soon!',
-              style: AppTextStyles.bodyLarge,
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
       ),
-      bottomNavigationBar: const AppBottomNavigation(currentIndex: 3),
+      backgroundColor: Color(0xFF0F172A),
     );
   }
 }

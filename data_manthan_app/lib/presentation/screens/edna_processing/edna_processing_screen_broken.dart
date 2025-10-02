@@ -1,14 +1,24 @@
-import 'package:flutter/material.dart';
+import   @override
+  Widget build(BuildContext context) {:flutter/material.dart';
+
+class EdnaProcessingScreen extends StatelessWidget {
+  const EdnaProcessingScreen({super.key});
 import '../../../core/themes/app_theme.dart';
 import '../../widgets/common/bottom_navigation.dart';
 
-class CollaborationScreen extends StatelessWidget {
-  const CollaborationScreen({super.key});
+class EdnaProcessingScreen extends StatefulWidget {
+  const EdnaProcessingScreen({Key? key}) : super(key: key);
+
+  @override
+  State<EdnaProcessingScreen> createState() => _EdnaProcessingScreenState();
+}
+
+class _EdnaProcessingScreenState extends State<EdnaProcessingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Collaboration'),
+        title: const Text('eDNA Processing'),
         centerTitle: true,
       ),
       body: const Center(
@@ -16,18 +26,18 @@ class CollaborationScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.handshake,
+              Icons.biotech,
               size: 80,
-              color: AppColors.accentCyan,
+              color: Colors.orange,
             ),
             SizedBox(height: 16),
             Text(
-              'Research Collaboration',
+              'eDNA Processing',
               style: AppTextStyles.headline3,
             ),
             SizedBox(height: 8),
             Text(
-              'Project management and team collaboration',
+              'Environmental DNA sequencing and analysis',
               style: AppTextStyles.bodyMedium,
               textAlign: TextAlign.center,
             ),
@@ -39,7 +49,7 @@ class CollaborationScreen extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const AppBottomNavigation(currentIndex: 4),
+      bottomNavigationBar: const AppBottomNavigation(currentIndex: 3),
     );
   }
 }

@@ -40,3 +40,7 @@ class _DataManthanAppState extends State<DataManthanApp> {
 
 class DataManthanApp extends StatefulWidget {
   const DataManthanApp({super.key});
+
+  @override
+  State<DataManthanApp> createState() => _DataManthanAppState();
+}

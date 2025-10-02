@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../../core/themes/app_theme.dart';
+import '../../widgets/common/bottom_navigation.dart';
 
 class DataVisualizationScreen extends StatelessWidget {
   const DataVisualizationScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,40 +16,30 @@ class DataVisualizationScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.bar_chart,
+              Icons.analytics,
               size: 80,
-              color: Colors.blue,
+              color: AppColors.primaryBlue,
             ),
             SizedBox(height: 16),
             Text(
               'Data Visualization',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
+              style: AppTextStyles.headline3,
             ),
             SizedBox(height: 8),
             Text(
-              'Interactive charts and marine data insights',
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.white70,
-              ),
+              'Interactive oceanographic charts and maps',
+              style: AppTextStyles.bodyMedium,
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 24),
             Text(
               'Coming Soon!',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
+              style: AppTextStyles.bodyLarge,
             ),
           ],
         ),
       ),
-      backgroundColor: Color(0xFF0F172A),
+      bottomNavigationBar: const AppBottomNavigation(currentIndex: 1),
     );
   }
 }
