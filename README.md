@@ -2,7 +2,7 @@
 
 # Data Manthan
 
-[![Live Site](https://img.shields.io/badge/Live–Site-🔗-blue)](https://data-manthan.vercel.app/)
+[![Live Site](https://img.shields.io/badge/Live–Site-🔗-blue)](https://data-manthan.vercel.app/) 
 
 **Data Manthan** is a comprehensive data platform (web + mobile) built for unified integration, visualization, and insights over oceanographic, fisheries, and molecular biodiversity data. It aims to break silos between diverse datasets (ocean parameters, fish morphology, taxonomy, eDNA) and make them accessible, interactive, and actionable.
 
